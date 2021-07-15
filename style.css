@@ -210,14 +210,18 @@ body {
     min-height: 80vh;
     max-height: 80vh;
   }
+
+  .texto {
+    top: 35vh;
+  }
   .texto h1 {
-    font-size: 28px;
+    font-size: 33px;
   }
 
   .texto p {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
   }
 
   .conteudo-h1 {
