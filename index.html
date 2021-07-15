@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DEVOCIONAL CONSTANTE</title>
+</head>
+<body>
+    <header id="header">
+       <a href="" class="logo" id="logo">CONSTANTE</a>
+      <div>
+        <ul class="nav-list">
+           <li><a href="#logo">Home</a></li>
+           <li><a href="#modulo">Módulos</a></li>
+           <li><a href="#">Estrutura</a></li>
+           <li><a href="#">Contato</a></li>
+       </ul> 
+      </div>
+    </header>
+    <section class="main">
+        <div class="texto">
+            <h1>Devocional Constante</h1>
+            <p>30 dias de devocionais que irão te munir e fazer você ter prazer em tornar disso um hábito</p> 
+        </div>
+    </section>
+    <section class="conteudo">
+        <h1 class="conteudo-h1">Vamos construir uma espada?</h1>
+        <div class="estrutura" id="modulo">
+           <div class="M1" data-tilt>
+            <h1>01</h1>
+            <h3>Seleção</h3>
+            <p>Na Seleção de materiais, você será apresentado a temas e bases do evangelho, para que no início, qualquer defasagem de princípios bíblicos sejam sanadas.</p>
+           </div>
+           <div class="M1" data-tilt>
+            <h1>02</h1>
+            <h3>Forja</h3>
+            <p>Nesse segundo módulo você será forjado, iremos trabalhar o livro de Exdras, 10 capítulos para 10 dias, você irá criar o hábito de ler a bíblia diariamente.</p>
+           </div>
+           <div class="M1">
+            <h1>03</h1>
+            <h3>Lapidação</h3>
+            <p>Finalmente, que bela espada contruimos! No último módulo iremos trabalhar os detalhes, pequenas coisas que na verdade irão fazer uma diferença grande no longo prazo.</p>
+           </div>
+        </div>
+
+    </section>
+    <section class="footer">
+
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".M1"),{
+            max: 25,
+            speed: 400,
+            glare: true
+        });
+    </script>
+</body>
+</html>
