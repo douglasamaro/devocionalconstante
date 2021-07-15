@@ -227,6 +227,10 @@ body {
 
   .estrutura {
     display: block;
-    padding: 3rem;
+    padding: 1rem;
+  }
+
+  .M1 h3 {
+    font-size: 21px;
   }
 }
