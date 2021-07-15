@@ -16,6 +16,20 @@ body {
   overflow-x: hidden;
 }
 
+.adquirir {
+  background: green;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+
+.adquirir:hover {
+  background: rgba(222, 184, 135, 0.822);
+}
+
 #header {
   z-index: 3000;
   position: absolute;
@@ -102,6 +116,8 @@ body {
   width: 100%;
   background: linear-gradient(
     to top,
+    rgba(75, 75, 75, 0.956),
+    rgba(75, 75, 75, 0.956),
     rgba(75, 75, 75, 0.956),
     rgba(75, 75, 75, 0.956),
     rgba(75, 75, 75, 0.956),
