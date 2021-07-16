@@ -334,7 +334,9 @@ body {
   }
   .estrutura-lista {
     display: block;
-    margin: 1rem;
-    width: 90%;
+  }
+  .estrutura .lista {
+    margin: 5px;
+    min-width: 90%;
   }
 }
