@@ -243,8 +243,8 @@ body {
   text-align: center;
   background: rgb(75, 75, 75);
   border-bottom-right-radius: 200px;
-  border-right: 1px solid white;
-  border-top: 1px solid white;
+  border-right: 1px solid rgba(255, 255, 255, 0.356);
+  border-right: 1px solid rgba(255, 255, 255, 0.356);
   overflow-x: hidden;
   position: relative;
 }
