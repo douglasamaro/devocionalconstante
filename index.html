@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>DEVOCIONAL CONSTANTE</title>
+    <script>
+        document.addEventListener('mousemove', function(e) {
+    let circle = document.getElementById('cursor');
+    let left = e.offsetX;
+    let top = e.offsetY;
+    circle.style.left = e.pageX + 'px';
+    circle.style.top = e.pageY + 'px';
+  });
+      </script>
 </head>
 <body>
+    <div id="cursor" class="cursor"></div>
     <header id="header">
        <a href="" class="logo" id="logo">CONSTANTE</a>
       <div>
@@ -19,16 +29,17 @@
        </ul> 
       </div>
     </header>
+<section class="container">  
     <section class="main">
         <div class="texto">
             <h1>Devocional Constante</h1>
-            <p>30 dias de devocionais que irão te munir e fazer você ter prazer em tornar disso um hábito</p> 
+            <p>30 dias de devocionais que irão te munir e fazer você ter prazer em tornar dele um hábito</p> 
             <button class="adquirir">QUERO SER CONSTANTE</button>
         </div>
     </section>
-    <section class="conteudo">
-        <h1 class="conteudo-h1">Vamos construir uma espada?</h1>
-        <div class="estrutura" id="modulo">
+    <section class="modulo">
+        <h1 class="modulo-h1">Vamos construir uma espada?</h1>
+        <div class="modulos" id="modulo">
            <div class="M1" data-tilt>
             <h1>01</h1>
             <h3>Seleção</h3>
@@ -47,9 +58,54 @@
         </div>
         <button class="adquirir">QUERO SER CONSTANTE</button>
     </section>
+    <section class="estrutura"> 
+        <div class="lista">
+            <ol>
+                <li>Criação</li>
+                <li>Sacrifício de Cristo</li>
+                <li>Retaliações</li>
+                <li>Identidade</li>
+                <li>Porque eu vou a igreja?</li>
+                <li>Jejum</li>
+                <li>Promessas</li>
+                <li>Discernimento</li>
+                <li>Amizade</li>
+                <li>Libertação</li>
+            </ol>
+        </div>
+        <div class="lista">
+            <ol>
+                <li>Criação</li>
+                <li>Sacrifício de Cristo</li>
+                <li>Retaliações</li>
+                <li>Identidade</li>
+                <li>Porque eu vou a igreja?</li>
+                <li>Jejum</li>
+                <li>Promessas</li>
+                <li>Discernimento</li>
+                <li>Amizade</li>
+                <li>Libertação</li>
+            </ol>
+        </div>
+        <div class="lista">
+            <ol>
+                <li>O Primeiro Chamado de Deus</li>
+                <li>O Segundo Chamado de Deus</li>
+                <li>O Terceiro Chamado de Deus</li>
+                <li>O Primeiro Poder da Palavra</li>
+                <li>O Segundo Poder da Palavra</li>
+                <li>O Terceiro Poder da Palavra</li>
+                <li>Promessas</li>
+                <li>Discernimento</li>
+                <li>Amizade</li>
+                <li> Excelência</li>
+            </ol>
+        </div>
+    </section>
     <section class="footer">
 
     </section>
+</section>   
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".M1"),{

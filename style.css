@@ -12,12 +12,36 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 100%;
   overflow-x: hidden;
 }
+#cursor {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all 150ms;
+  z-index: 9999;
+  backdrop-filter: blur(100%);
+}
+
+.container {
+  position: relative;
+  height: 120%;
+}
+
+/* .footer {
+  height: 30vh;
+  width: 100%;
+  background: #222;
+  position: absolute;
+  bottom: 0;
+} */
 
 .adquirir {
-  background: green;
+  background: url(capa-jornal-site.png);
   border: 1px solid white;
   padding: 5px;
   margin: 5px;
@@ -31,7 +55,7 @@ body {
 }
 
 #header {
-  z-index: 3000;
+  z-index: 30000;
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +130,7 @@ body {
   padding-right: 30%;
 }
 
-.conteudo {
+.modulo {
   overflow-x: hidden;
   position: relative;
   text-align: center;
@@ -116,7 +140,7 @@ body {
   width: 100%;
   background: linear-gradient(
     to top,
-    rgba(75, 75, 75, 0.956),
+    rgba(75, 75, 75, 0.979),
     rgba(75, 75, 75, 0.956),
     rgba(75, 75, 75, 0.956),
     rgba(75, 75, 75, 0.956),
@@ -128,13 +152,13 @@ body {
   );
 }
 
-.conteudo-h1 {
+.modulo-h1 {
   font-family: 30px;
   font-weight: lighter;
   padding-top: 10vh;
 }
 
-.conteudo::before {
+.modulo::before {
   content: "";
   position: absolute;
   top: 0;
@@ -143,11 +167,11 @@ body {
   height: 100%;
   background: url(capa.png);
   opacity: 40%;
-  clip-path: circle(20% at 95% 75%);
+  clip-path: circle(18% at 95% 70%);
   z-index: 0;
 }
 
-.conteudo::after {
+.modulo::after {
   content: "";
   position: absolute;
   top: 0;
@@ -160,7 +184,7 @@ body {
   z-index: 0;
 }
 
-.estrutura {
+.modulos {
   min-width: 100%;
   display: flex;
   justify-content: space-around;
@@ -171,7 +195,7 @@ body {
 
 .M1 {
   position: relative;
-  z-index: 30;
+  z-index: 300000;
   display: block;
   margin-bottom: 2.5rem;
   margin-top: 1.5rem;
@@ -217,6 +241,24 @@ body {
   text-align: center;
   padding: 5px;
 }
+.estrutura {
+  display: flex;
+  height: 110%;
+  width: 100%;
+  padding-top: 20vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+
+  background: rgb(75, 75, 75);
+}
+
+.estrutura .lista {
+  margin: 2rem;
+  text-align: left;
+  width: 33%;
+}
 
 @media screen and (max-width: 880px) {
   #header {
@@ -240,12 +282,12 @@ body {
     font-size: 14px;
   }
 
-  .conteudo-h1 {
+  .modulo-h1 {
     font-size: 22px;
     padding: 5px;
   }
 
-  .estrutura {
+  .modulos {
     display: block;
     padding: 1rem;
   }
@@ -256,5 +298,10 @@ body {
 
   .M1 p {
     font-size: 15px;
+  }
+
+  .estrutura {
+    font-size: 13px;
+    display: block;
   }
 }
